@@ -32,19 +32,22 @@ h1{
     align-items: center;
 }
 
-.btn{
+.btn {
     display: flex;
     flex-wrap: wrap;
     all: unset;
     padding: 24px;
-    border-radius: 50%;
     background-color: #313131;
     color: white;
     font-size: 1.2rem;
     margin: 5px;
     flex: 1;
     text-align: center;
-}
+    width: 30px; /* set the same width and height */
+    height: 30px;
+    border-radius: 50%; /* set border-radius to 50% */
+  }
+  
 
 .btn:hover{
     cursor: pointer;
@@ -75,7 +78,10 @@ input::-webkit-inner-spin-button {
 }
 
 .extra{
-    padding-right: 3rem;
+    border-radius: 35px 31px 31px 35px;
+    width: 90px;
+
+  
 }
 
 .yellow{
