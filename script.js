@@ -1,12 +1,11 @@
 let string = "";
 const input = document.querySelector(".text");
 const buttons = document.querySelectorAll(".btn");
-
 Array.from(buttons).forEach(function(a) {
   a.addEventListener("click", function() {
     try {
       if (a.innerHTML === "=") {
-        // here i convert string variable to string because after calculation it return number 
+        // Here i convert string variable to string because after calculation it return number 
         string = eval(string).toString();
         input.value = string;
       } else if (a.innerHTML == "AC") {
