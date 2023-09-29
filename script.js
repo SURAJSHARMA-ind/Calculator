@@ -14,7 +14,9 @@ Array.from(buttons).forEach(function(a) {
       } else if(a.innerHTML === "&lt;" ){
         string = string.slice(0,-1)
         input.value=string
-        console.log("hey u call me")
+      }
+      else if(a.innerHTML === "^") {
+        string += "**";
       }
       else {
         string = string + a.innerHTML;
@@ -25,4 +27,13 @@ Array.from(buttons).forEach(function(a) {
     }
   });
 });
+// this is underdev feature
+//
+const specialbtn = document.querySelectorAll(".countone")
+specialbtn.forEach((btn)=>{
+  btn.addEventListener("click",()=>{
+    console.log(`you click ${btn.innerHTML}`)
+  })
+})
+//underdev 
 
